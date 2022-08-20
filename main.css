@@ -1,0 +1,171 @@
+/* Incorporacion de fuentes css import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* variables css */
+:root {
+    /* incorporacion de colores principales de la aplicacion */
+    --tone-color-black: #242424;
+    --tone-color-gray: #7B7D7D;
+    --tone-color-white: #F6F6F6;
+    --tone-color-background: #EEEEEE;
+    
+    /* incorporacion de colores en rgba para las sombras */
+    --tone-shadow: rgba(209, 209, 209, 0.5);
+
+    /* estilos para font weight  */
+    --fnt-bold: 700;
+    --fnt-semiBold: 500;
+    --fnt-regular: 400;
+    --fnt-light: 300;
+
+    --fnt-family: 'Roboto', sans-serif;
+}
+
+
+/* formateo del body */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--tone-color-background);
+    font-family: var(--fnt-family);
+    background-image: url('./src/assets/img/blog-body-bg.png');
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    padding: .8rem 2.2rem;
+    margin: 0 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+/* configuracion de la barra de navegacion */
+.cNav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--tone-color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 60px;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    color: var(--tone-color-black);
+    box-shadow: 0px 10px 30px var(--tone-shadow);
+}
+
+.cNav-title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.spaceNav {
+    width: 100%;
+    height: 80px;
+}
+
+
+.cNav-menu a {
+    color: #212529;
+    font-weight: 400;
+    margin-right: 20px;
+    padding: .5rem 1rem;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.cNav-menu a:hover {
+    background-color: var(--tone-color-background);
+}
+
+.cNav-socialLink a i {
+    margin-left: 1rem;
+    font-size: 25px;
+    color: var(--tone-color-black);
+    transition: .3s;
+}
+
+.cNav-socialLink a i:hover {
+    transform: scale(1.2);
+}
+
+
+/* display para desaparecer contenidos */
+.addHide {
+    display: none;
+}
+
+/* contenido de la pagina de aterrizage */
+.cHomePage {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.cHomePage__content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cHomePage-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+.cHomePage-subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--tone-color-gray)
+}
+
+.cHomePage-parrafo {
+    font-size: 1.2rem;
+    font-weight: var(--fnt-semiBold);
+}
+
+.cHomePage-btns {
+    margin-top: 2rem;
+}
+
+/* btn registrar */
+
+.btnSignUp {
+    background-color: var(--tone-color-background);
+    border: 1px solid var(--tone-color-black);
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.btnSignUp:hover {
+    background-color: var(--tone-color-black);
+    color: var(--tone-color-white);
+}
+
+/* btn iniciar sesion */
+.btnSignIn {
+    background-color: var(--tone-color-black);
+    border-radius: 20px;
+    color: var(--tone-color-white);
+}
