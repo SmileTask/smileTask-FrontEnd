@@ -1,1 +1,1 @@
-# smileTask-FrontEnd
+# SmileTask-FrontEnd
