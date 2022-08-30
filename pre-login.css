@@ -25,7 +25,7 @@ body{
 
 .main-container {
     width: 100%;
-    height: 100vh;
+    height: 94vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,4 +120,14 @@ footer{
  h2{
     margin-left: 40px;
     margin-top: 7px;
+}
+
+a.registro:hover{
+    color: #5ea2da;
+    font-weight: var(--fnt-font-bold);
+}
+
+a.registro:active{
+    color: black;
+    font-weight: var(--fnt-font-bold);
 }
