@@ -1,0 +1,133 @@
+/* importacion de fuente -> inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* font family */
+    --fnt-font-family: 'Inter', sans-serif;
+
+    /* tipo de grosor font family */
+    --fnt-font-bold: 700;
+    --fnt-font-regular: 400;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #243954;
+    font-family: var(--fnt-font-family);
+}
+
+.main-container {
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-login {
+    background-color: #365670;
+    width: 430px; 
+    height: 400px;  
+    border-radius: 23px;
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+    display: flex;
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.no-login {
+    color: white;
+    font-size: 11px;
+    font-weight: var(--fnt-font-regular);
+}
+
+.no-login a {
+    color: white;
+}
+
+
+.title {
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    font-weight: var(--fnt-font-bold);
+}
+
+
+.btn{
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.5);
+    border-radius: 17px;
+    padding: 7px 0;
+    background-color: #0B1926;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+.btn:hover{
+    box-shadow: inset -2px -3px 10px 1px rgba(0,0,0,0.5);
+    background-color: #42637e;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: #243954;
+    box-shadow: inset 2px 3px 10px 1px rgba(0,0,0,0.5);
+}
+
+
+input{
+    width: 100%;
+    border: 0px;
+    outline: none;
+    border-radius: 11px;
+    padding: 14px;
+    box-shadow: inset 2px 3px 10px 1px rgba(0,0,0,0.5);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+::placeholder{
+    color: rgb(185, 185, 185);
+}
+
+footer{
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    color: #365670;
+    border-radius: 23px 23px 0 0;
+ }
+ 
+ h2{
+    margin-left: 40px;
+    margin-top: 7px;
+}
+
+a.registro:hover{
+    color: #5ea2da;
+    font-weight: var(--fnt-font-bold);
+}
+
+a.registro:active{
+    color: black;
+    font-weight: var(--fnt-font-bold);
+}
