@@ -48,7 +48,6 @@ body {
   transition: 0.3s;
 }
 
-
 /* login section */
 
 .main-form {
@@ -147,3 +146,75 @@ input::placeholder {
 }
 
 /* footer section */
+
+.footer {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px 20px;
+  background-color: var(--tone-color-five);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-name {
+  color: var(--tone-color-three);
+  font-weight: var(--fnt-font-bold);
+  font-size: 20px;
+}
+
+.footer-rights {
+  color: var(--tone-color-three);
+}
+
+.footer-rights p a {
+  color: var(--tone-color-three);
+  font-weight: var(--fnt-font-bold);
+  text-decoration: none;
+}
+
+.terms-condition a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: var(--fnt-font-regular);
+}
+
+.terms-condition p,
+.terms-condition a {
+  color: var(--tone-color-three);
+}
+
+.footer-terms .terms-condition {
+  display: flex;
+  flex-direction: row;
+}
+
+/* section responsive web design */
+@media screen and (max-width: 1020px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-rights {
+    margin-top: 10px;
+  }
+
+  .terms-condition a {
+    margin: 10px 10px;
+  }
+
+  .terms-condition p {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .form-container {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 15px;
+  }
+}
