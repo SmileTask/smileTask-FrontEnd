@@ -1,0 +1,149 @@
+/* importacion de fuente -> inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  /* font family */
+  --fnt-font-family: "Inter", sans-serif;
+
+  /* tipo de grosor font family */
+  --fnt-font-bold: 700;
+  --fnt-font-regular: 400;
+
+  /* palet color */
+  --tone-color-one: #0b1926;
+  --tone-color-two: #243954;
+  --tone-color-three: #365670;
+  --tone-color-four: #7cbac4;
+  --tone-color-five: #f6f6f6;
+
+  /* shadows */
+  --tone-color-shadow: rgba(0, 0, 0, 0.25);
+
+  /* title */
+  --tone-title-white: #fff;
+  --tone-input-placeholder: #bbbbbb;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--tone-color-two);
+  font-family: var(--fnt-font-family);
+  scroll-behavior: smooth;
+}
+
+/* style for scroll bar */
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background: var(--tone-color-five);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tone-color-one);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+/* login section */
+
+.main-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 458px;
+  height: 433px;
+  background-color: var(--tone-color-three);
+  border-radius: 23px;
+  box-shadow: 10px 15px 25px var(--tone-color-shadow);
+  padding: 30px;
+  text-align: center;
+}
+
+.container-inputs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.inputs-title {
+  color: var(--tone-title-white);
+  font-weight: var(--fnt-font-bold);
+  font-size: 25px;
+}
+
+.inputs {
+  width: 100%;
+}
+
+.inputs p {
+  text-align: left;
+  color: var(--tone-title-white);
+  font-size: 13px;
+}
+
+.inputs p a {
+  color: var(--tone-title-white);
+}
+
+.inputs .inputs-type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputs .inputs-type input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 15px;
+  box-shadow: inset 0px 4px 4px var(--tone-color-shadow);
+  border-radius: 11px;
+  background-color: var(--tone-color-five);
+  outline: none;
+  border: none;
+  font-size: 17px;
+  color: var(--tone-color-two);
+  font-family: var(--fnt-font-family);
+}
+
+input::placeholder {
+  font-family: var(--fnt-font-family);
+  font-size: 17px;
+  color: var(--tone-input-placeholder);
+}
+
+.inputs-btn {
+  width: 100%;
+}
+
+.container-inputs .inputs-btn button {
+  width: 100%;
+  height: 40px;
+  color: var(--tone-title-white);
+  background-color: var(--tone-color-one);
+  font-family: var(--fnt-font-family);
+  font-size: 20px;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px var(--tone-color-shadow);
+  transition: 0.3s;
+}
+
+.inputs-btn button:hover {
+  transform: translateY(-3px);
+}
+
+/* footer section */
