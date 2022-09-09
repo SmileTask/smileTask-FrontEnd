@@ -50,7 +50,7 @@ body {
 
 /* login section */
 
-.main-form {
+.main-login-form {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -58,7 +58,7 @@ body {
   justify-content: center;
 }
 
-.form-container {
+.form-login-container {
   width: 458px;
   height: 433px;
   background-color: var(--tone-color-three);
@@ -212,7 +212,7 @@ input::placeholder {
 }
 
 @media screen and (max-width: 428px) {
-  .form-container {
+  .form-login-container {
     background-color: transparent;
     box-shadow: none;
     padding: 15px;
